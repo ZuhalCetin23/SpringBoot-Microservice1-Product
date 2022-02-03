@@ -1,14 +1,12 @@
 package com.sha.product.model.entity;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.Date;
 
 @Data
+@EqualsAndHashCode(callSuper = true)
 @Table(name = "PRODUCTS")
 @javax.persistence.Entity
 public class Product extends Entity<Integer>

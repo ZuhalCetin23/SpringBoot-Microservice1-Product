@@ -32,6 +32,6 @@ public class Product extends Entity<Integer>
 
     @Temporal(TemporalType.DATE)
     @Column(nullable = false)
-    private Date created = new Date();
+    private Date created;
 
 }
